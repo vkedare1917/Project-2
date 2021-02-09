@@ -1,0 +1,191 @@
+/*CSS Reset*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*CSS Variables*/
+:root{
+	--navbar-height: 59px;
+}
+
+/*Navigation Bar & Logo and Image*/
+#navbar{
+	display: flex;
+	align-items: center;
+	position: relative;
+	top: 0px;
+}
+
+#logo img {
+	margin: 12px 30px;
+	width: 66px;
+	height: 75px;
+	border-radius: 200px;
+}
+
+/*Navigation Bar: List Styling*/
+
+#navbar ul {
+	display: flex;
+	font-family: 'Baloo Bhai 2', cursive;	
+}
+
+#navbar::before {
+	content: "";
+	background-color: black;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.4;
+} 
+
+#navbar ul li { 
+	list-style: none;
+	font-size: 1.3rem;
+	/*margin: 5px;*/
+}
+
+#navbar ul li a {
+	color: white;
+	display: block;
+	padding: 3px 22px;
+	border-radius: 20px;
+	text-decoration: none;
+}
+
+#navbar ul li a:hover {
+	color: black;
+	background-color: white;
+}
+
+/*Home Section*/
+#home {
+	display: flex;
+	flex-direction: column;
+	padding: 10px 200px;
+	height: 450px;
+	justify-content: center;
+	align-items: center;
+}
+
+#home::before {
+	content: "";
+	background: url(img/bg.png) no-repeat center center/cover;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: -1;
+	opacity: 0.89;
+}
+
+#home h1 {
+	color: #a44;
+	text-align: center;
+	font-family: 'Bree Serif', serif;
+}
+
+#home p {
+	color: #334;
+	text-align: center;
+	font-size: 1.2rem;
+	font-family: 'Bree Serif', serif;
+}
+/*Services Section*/
+
+
+#services{
+	margin: 34px;
+	display: flex; 
+}
+
+#services .box {
+	border: 2px solid brown;
+	padding: 32px;
+	margin: 3px 6px;
+	border-radius: 28px;
+	background: #f2f2f2;  
+}
+
+#services .box img {
+	margin: auto;
+	display: block;	
+	height: 90px;
+	width: 90px;
+}
+
+#service .box p{
+	font-family: 'Bree Serif', serif;	
+}
+
+/*Client Section*/
+#apple-img {
+	height: 124px;
+	width: 104px;
+	margin: 10px 44px;
+}
+
+#client-section {
+	height: 124px;
+	position: relative;
+}
+
+#client-section::before {
+	content: "";
+	position: absolute;
+	background: url(img/bg1.jpg);
+	width: 100%;
+	height: 300px;
+	z-index: -1;
+	opacity: 0.6;
+}
+
+#clients {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.client-item {
+	padding: 34px; 
+}
+
+.h-center {
+	text-align: center;
+	font-size: 45px;
+}
+
+/*Utility Classes*/
+.h-primary {
+	text-align: center;
+	font-size: 3.4rem;
+	padding-top: 200px;
+	font-family: 'Bree Serif', serif;
+}
+
+.h-secondary {
+	font-family: 'Bree Serif', serif;
+	font-size: 2.3rem;
+	padding: 12px;
+}
+
+.btn {
+	padding: 6px 20px;
+	border: 2px solid white;
+	background-color: brown;
+	color: white;
+	margin: 17px;
+	font-size: 1.5rem;
+	border-radius: 10px;
+	cursor: pointer;
+}
+
+.center {
+	text-align: center;
+}
+
